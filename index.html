@@ -11,18 +11,31 @@
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
     <title>Buscador de CEP</title>
+    <link href="/assets/favicon.magnifier.ico" rel="icon" type="image/x-icon">
   </head>
 
   <body class="flex min-h-screen flex-col bg-[url(/assets/bg_sky.jpg)] bg-cover bg-no-repeat bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-20 backdrop-saturate-100 backdrop-contrast-100">
-    <header class=" bg-white shadow-[0px_72px_154px_0px_rgba(2,2,2,0.2)] ">
-      <div class="flex justify-between w-auto p-6">
-        <div class="flex items-center gap-4">
-            <i class="ph ph-magnifying-glass text-2xl"></i>
-            <h1 class="bg-white rounded-sm p-2 font-semibold border">Buscador CEP</h1>
-        </div>
+    <header class="px-4 pt-4 sm:px-6">
+      <div class="mx-auto max-w-5xl rounded-3xl border border-white/50 bg-white/80 px-5 py-4 shadow-[0_24px_80px_rgba(2,2,2,0.16)] backdrop-blur-md sm:px-6">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-lg shadow-slate-900/20">
+              <i class="ph ph-magnifying-glass text-2xl"></i>
+            </div>
 
-        <div>
-            <i class="ph ph-question text-3xl"></i>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.28em] text-sky-600">Consulta rápida</p>
+              <h1 class="mt-1 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Buscador de CEP</h1>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900"
+            aria-label="Ajuda"
+          >
+            <i class="ph ph-question text-2xl"></i>
+          </button>
         </div>
       </div>
     </header>
