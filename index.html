@@ -13,20 +13,54 @@
     <title>Buscador de CEP</title>
   </head>
 
-  <body class="h-screen">
-    <header class="shadow-xl bg-gradient-to-b from-blue-800 via-blue-500 to-blue-300">
+  <body class="flex min-h-screen flex-col bg-[url(/assets/bg_sky.jpg)] bg-cover bg-no-repeat bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-20 backdrop-saturate-100 backdrop-contrast-100">
+    <header class=" bg-white shadow-[0px_72px_154px_0px_rgba(2,2,2,0.2)] ">
       <div class="flex justify-between w-auto p-6">
         <div class="flex items-center gap-4">
-            <i class="ph ph-magnifying-glass text-2xl text-white"></i>
-            <h1 class="bg-white rounded-xl p-2 font-semibold">Buscador CEP</h1>
+            <i class="ph ph-magnifying-glass text-2xl"></i>
+            <h1 class="bg-white rounded-sm p-2 font-semibold border">Buscador CEP</h1>
         </div>
 
         <div>
-            <i class="ph ph-question text-3xl text-white"></i>
+            <i class="ph ph-question text-3xl"></i>
         </div>
       </div>
     </header>
 
-    <main></main>
+    <main class="flex flex-1 items-center justify-center px-4">
+      <section class="w-full max-w-md rounded-3xl border border-white/60 bg-white/90 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+        <div class="mb-6 text-center">
+          <h2 class="text-3xl font-bold text-slate-900 pb-6">Busque um CEP</h2>
+          <p class="mt-2 text-slate-600">Digite o CEP no campo abaixo para iniciar a pesquisa.</p>
+        </div>
+
+        <form class="space-y-4">
+          <div>
+            <label for="cep" class="mb-4 pl-4 block text-sm font-semibold text-slate-700">CEP</label>
+            <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-200">
+              <i class="ph ph-map-pin text-xl text-slate-400"></i>
+              <input
+                id="cep"
+                name="cep"
+                type="text"
+                inputmode="numeric"
+                maxlength="9"
+                placeholder="00000-000"
+                class="w-full bg-transparent text-slate-900 outline-none placeholder:text-slate-400"
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-slate-700 active:scale-[0.99]"
+          >
+            <i class="ph ph-magnifying-glass text-lg"></i>
+            Buscar CEP
+          </button>
+        </form>
+      </section>
+    </main>
+
   </body>
 </html>
