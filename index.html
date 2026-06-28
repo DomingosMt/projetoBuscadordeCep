@@ -24,7 +24,7 @@
             </div>
 
             <div>
-              <p class="text-xs font-bold uppercase tracking-[0.28em] text-sky-600">Consulta rápida</p>
+              <p class="text-xs font-bold uppercase tracking-wide text-sky-600">Consulta rápida</p>
               <h1 class="mt-1 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Buscador de CEP</h1>
             </div>
           </div>
@@ -41,15 +41,14 @@
     </header>
 
     <main class="flex flex-1 items-center justify-center px-4">
-      <section class="w-full max-w-md rounded-3xl border border-white/60 bg-white/90 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+      <section id="dados" class="w-full max-w-md rounded-3xl border border-white/60 bg-white/90 p-6 shadow-2xl backdrop-blur-md sm:p-8">
         <div class="mb-6 text-center">
           <h2 class="text-3xl font-bold text-slate-900 pb-6">Busque um CEP</h2>
           <p class="mt-2 text-slate-600">Digite o CEP no campo abaixo para iniciar a pesquisa.</p>
         </div>
 
-        <form class="space-y-4">
+        <form class="space-y-4" onsubmit="pesquisacep(event)">
           <div>
-            <label for="cep" class="mb-4 pl-4 block text-sm font-semibold text-slate-700">CEP</label>
             <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-200">
               <i class="ph ph-map-pin text-xl text-slate-400"></i>
               <input
@@ -75,5 +74,6 @@
       </section>
     </main>
 
+    <script src="index.js"></script>
   </body>
 </html>
