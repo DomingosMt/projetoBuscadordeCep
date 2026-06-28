@@ -11,21 +11,33 @@
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
     <title>Buscador de CEP</title>
-    <link href="/assets/favicon.magnifier.ico" rel="icon" type="image/x-icon">
+    <link href="/assets/favicon.magnifier.ico" rel="icon" type="image/x-icon" />
   </head>
 
-  <body class="flex min-h-screen flex-col bg-[url(/assets/bg_sky.jpg)] bg-cover bg-no-repeat bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-20 backdrop-saturate-100 backdrop-contrast-100">
+  <body
+    class="flex min-h-screen flex-col bg-[url(/assets/bg_sky.jpg)] bg-cover bg-no-repeat bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-20 backdrop-saturate-100 backdrop-contrast-100"
+  >
     <header class="px-4 pt-4 sm:px-6">
-      <div class="mx-auto max-w-5xl rounded-3xl border border-white/50 bg-white/80 px-5 py-4 shadow-[0_24px_80px_rgba(2,2,2,0.16)] backdrop-blur-md sm:px-6">
+      <div
+        class="mx-auto max-w-5xl rounded-3xl border border-white/50 bg-white/80 px-5 py-4 shadow-[0_24px_80px_rgba(2,2,2,0.16)] backdrop-blur-md sm:px-6"
+      >
         <div class="flex items-center justify-between gap-4">
           <div class="flex items-center gap-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-lg shadow-slate-900/20">
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-lg shadow-slate-900/20"
+            >
               <i class="ph ph-magnifying-glass text-2xl"></i>
             </div>
 
             <div>
-              <p class="text-xs font-bold uppercase tracking-wide text-sky-600">Consulta rápida</p>
-              <h1 class="mt-1 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Buscador de CEP</h1>
+              <p class="text-xs font-bold uppercase tracking-wide text-sky-600">
+                Consulta rápida
+              </p>
+              <h1
+                class="mt-1 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
+              >
+                Buscador de CEP
+              </h1>
             </div>
           </div>
 
@@ -41,15 +53,22 @@
     </header>
 
     <main class="flex flex-1 items-center justify-center px-4">
-      <section id="dados" class="w-full max-w-md rounded-3xl border border-white/60 bg-white/90 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+      <section
+        id="dados"
+        class="w-full max-w-md rounded-3xl border border-white/60 bg-white/90 p-6 shadow-2xl backdrop-blur-md sm:p-8"
+      >
         <div class="mb-6 text-center">
           <h2 class="text-3xl font-bold text-slate-900 pb-6">Busque um CEP</h2>
-          <p class="mt-2 text-slate-600">Digite o CEP no campo abaixo para iniciar a pesquisa.</p>
+          <p class="mt-2 text-slate-600">
+            Digite o CEP no campo abaixo para iniciar a pesquisa.
+          </p>
         </div>
 
         <form class="space-y-4" onsubmit="pesquisacep(event)">
           <div>
-            <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-200">
+            <div
+              class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-200"
+            >
               <i class="ph ph-map-pin text-xl text-slate-400"></i>
               <input
                 id="cep"
